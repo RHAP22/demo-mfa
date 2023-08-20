@@ -1,11 +1,12 @@
 import Link from "next/link";
+import QrcodeImg from "./Otp";
 
 export default function RegisterForm() {
     return (
     <div className="grid place-items-center h-screen" >
     <div className="shadow-lg p-5 rounded-lg border-t-4 border-green-400">
         <h1 className="text-xl font-bold my-4">Register</h1>
-
+        <QrcodeImg></QrcodeImg>
         <form className="flex flex-col gap-3">
             <input type="text" placeholder="Full Name" />
             <input type="text" placeholder="Email" />
@@ -14,9 +15,7 @@ export default function RegisterForm() {
                 Register 
                 </button>
 
-        <div className="bg-red-500 text-white w-fit text-sm py-1 px-3 rounded-md mt-2">
-                Wrong Password
-            </div>
+
 
             <Link className="text-sm mt-3 text-right" href={"/"}>
             Already have an account? <span 

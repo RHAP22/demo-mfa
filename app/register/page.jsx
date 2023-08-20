@@ -1,5 +1,11 @@
 import RegisterForm from "@/components/Register"
+import QRCode from "@/components/Otp";
 export default function register(){
     
-    return <RegisterForm /> ;
+    return (
+        <div>
+    <RegisterForm />
+    <QRCode/>
+    </div>
+     ) ;
 }
