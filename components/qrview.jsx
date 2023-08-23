@@ -7,7 +7,7 @@ export default function QRImg({userId}){
     const [data, setData] = useState('')
 
     async function generateQR(){
-      const response = fetch('https://mfaecho-1-n7940582.deta.app/api/auth/otp/generate',{
+      const response = await fetch('https://mfaecho-1-n7940582.deta.app/api/auth/otp/generate',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
