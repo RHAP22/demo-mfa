@@ -21,11 +21,9 @@ export default function RegisterForm() {
             })
         })
 
-        const router = useRouter()
-
         if(response.status == 201){
             alert("Register succesful. Please Login!")
-            router.push('/')
+            window.location.href = '/'
         }
     }
     
